@@ -1,0 +1,59 @@
+html body {
+  height: 100px;
+}
+
+h1 h2 h3 p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  height: 60px;
+  background-color: black;
+}
+
+footer {
+  height: 60px;
+  background-color: black;
+}
+
+.contents {
+  margin: 0 auto;
+  height: 900px;
+  width: 600px;
+}
+
+.contents .upper {
+  height: 300px;
+  width: 500px;
+  margin: 100px 0;
+  background-color: gray;
+}
+
+.contents .bottom {
+  height: 300px;
+  width: 500px;
+  background-color: gray;
+}
+
+.header-left {
+  color: white;
+  float: left;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.header-right {
+  color: white;
+  float: right;
+}
+
+.header-right li {
+  float: right;
+  margin: 8px;
+}
