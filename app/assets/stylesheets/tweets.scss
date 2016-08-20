@@ -8,6 +8,11 @@ h1 h2 h3 p {
   padding: 0;
 }
 
+body {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   list-style: none;
 }
@@ -15,31 +20,21 @@ li {
 .header {
   height: 60px;
   background-color: black;
+  width: 100%;
 }
 
 footer {
   height: 60px;
   background-color: black;
+  width: 100%;
 }
 
 .contents {
   margin: 0 auto;
-  height: 900px;
+  min-height: 900px;
   width: 600px;
 }
-
-.contents .upper {
-  height: 300px;
-  width: 500px;
-  margin: 100px 0;
-  background-color: gray;
-}
-
-.contents .bottom {
-  height: 300px;
-  width: 500px;
-  background-color: gray;
-}
+s
 
 .header-left {
   color: white;
@@ -56,4 +51,16 @@ footer {
 .header-right li {
   float: right;
   margin: 5px 8px;
+}
+
+.post {
+  height: 100px;
+  width: 100px;
+}
+
+.post {
+  height: 300px;
+  width: 500px;
+  margin: 100px 0;
+  background-color: gray;
 }
