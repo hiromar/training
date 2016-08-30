@@ -12,8 +12,12 @@
      <div class="header-right">
       <ul>
        <li>投稿する</li>
+       <% if user_signed_in? %>
+       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+       <% else %>
        <li><%= link_to 'ログイン', '/users/sign_in' %></li>
        <li><%= link_to '新規登録', '/users/sign_up' %></li>
+       <% end %>
       </ul>
      </div>
    </div>

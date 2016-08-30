@@ -12,7 +12,7 @@ class TweetsController < ApplicationController
 
   private
   def tweet_params
-    params.permit(:nickname, :image, :hobby)
+    params.permit(:nickname, :image, :text)
   end
 
 end
