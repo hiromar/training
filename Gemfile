@@ -47,5 +47,6 @@ group :development do
   gem 'compass-rails', '~> 2.0'
   gem 'sprockets', '2.11.0'
   gem 'devise'
+  gem 'bootstrap-sass'
 end
 

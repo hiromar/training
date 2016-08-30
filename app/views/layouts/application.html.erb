@@ -11,8 +11,8 @@
    <div class="header-left">Training</div>
      <div class="header-right">
       <ul>
-       <li>投稿する</li>
        <% if user_signed_in? %>
+       <li><%= link_to '投稿する', new_tweet_path, method: :get %></li>
        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
        <% else %>
        <li><%= link_to 'ログイン', '/users/sign_in' %></li>

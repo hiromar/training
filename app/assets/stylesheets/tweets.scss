@@ -49,7 +49,6 @@ li {
 }
 
 
-
 .post {
   height: 300px;
   width: 500px;
@@ -63,3 +62,37 @@ footer {
   background-color: black;
   width: 100%;
 }
+
+.new_post {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.new_post_nickname {
+  height: 50px;
+  width: 500px;
+  float: left;
+}
+
+.new_post_image {
+  height: 50px;
+  width: 500px;
+  float: left;
+}
+
+.new_post_text {
+  height: 300px;
+  width: 500px;
+  float: left;
+}
+
+.sent_post {
+  width: 500px;
+  float: left;
+  margin: 10px 4px;
+}
+
+p {
+  text-align: center;
+}
+
