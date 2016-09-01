@@ -1,9 +1,10 @@
-  <p>投稿する</p>
-<div class="new_post">
-  <%= form_tag("/tweets", method: "post") do %>
-    <input placeholder="nickname" type="text" name="nickname" class="new_post_nickname">
-    <input placeholder="image url" type="text" name="image" class="new_post_image">
-    <textarea placeholder="text" name="text" class="new_post_text"></textarea>
-  <% end %>
-  <input value="sent" type="submit" class="sent_post">
-</div>
+
+<%= form_for @tweet do |f| %>
+ <%= f.label :nickname %>
+ <%= f.text_field :nickname %>
+  <%= f.label :image_url %>
+ <%= f.text_field :image %>
+  <%= f.label :text %>
+ <%= f.text_field :text %>
+ <%= f.submit "sent" %>
+<% end %>
