@@ -4,6 +4,7 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = Tweet.all
+    @users = User.all
   end
 
   def new
@@ -13,6 +14,10 @@ class TweetsController < ApplicationController
   def create
     Tweet.create(tweet_params)
     redirect_to controller: :tweets, action: :index
+  end
+
+  def show
+    @user = User.all
   end
 
   private
